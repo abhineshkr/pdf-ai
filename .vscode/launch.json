@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug FastAPI",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env",
+            "python": "${workspaceFolder}/venv/Scripts/python.exe",
+            "args": [
+                "main:app",  // This should be in import string format
+                "--reload"
+            ],
+            "justMyCode": false
+        }
+    ]
+}
